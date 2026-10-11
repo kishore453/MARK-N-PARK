@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: marknpark-backend-test
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/marknpark_test
+      auto-index-creation: false
+
+jwt:
+  secret: testsecretjwtkeythatisminimum256bitslongformarknparksecurityplatform2026!
+  expiration: 3600000
+
+razorpay:
+  key-id: rzp_test_dummy
+  key-secret: dummy_secret
+
+cloudinary:
+  url: ""
+
+cors:
+  allowed-origins: "http://localhost:5173"
